@@ -1,0 +1,20 @@
+body {
+    background-color: #ECBDC4;
+    font-family: Arial, sans-serif;
+    padding: 20 px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20 px;
+}
+
+.image {
+    border-radius: 10px; /* มุมโค้ง */
+    padding: 0px; /* ไม่มีระยะห่างภายใน */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    max-width: 600px; /* กำหนดความกว้างสูงสุด */
+    display: block; /* ทำให้เป็นบล็อกเพื่อให้ margin auto ทำงาน */
+}
