@@ -1,60 +1,70 @@
-/* ตั้งค่าให้ html และ body มีความสูงเต็มหน้าจอและไม่มี margin */
+/* กำหนดฟอนต์ให้กับทั้ง html, body และส่วนที่ต้องการใช้งาน */
 html, body {
-    margin: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
-  /* จัดสไตล์ให้กับฟอร์มให้อยู่กึ่งกลางและน่ารัก */
-  #checkForm {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  #checkForm label {
-    display: block;
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 8px;
-  }
-  
-  #checkForm input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border: 2px solid #ffb6c1;
-    border-radius: 8px;
-    font-size: 1em;
-    outline: none;
-  }
-  
-  #checkForm input[type="submit"] {
-    background-color: #ffb6c1;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #checkForm input[type="submit"]:hover {
-    background-color: #ff8da1;
-  }
-  
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: 'Itim', cursive;
+}
+
+/* ตัวอย่างการปรับสไตล์ของฟอร์ม */
+#checkForm {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  font-family: 'Itim', cursive;
+}
+
+
+/* ปรับสไตล์ให้กับแต่ละกลุ่มของฟอร์ม */
+.form-group {
+  margin-bottom: 25px;         /* เพิ่มระยะห่างระหว่างกลุ่ม */
+}
+
+/* ขยายขนาดข้อความ label */
+#checkForm label {
+  display: block;
+  font-size: 1.5em;            /* ขยายขนาดฟอนต์ */
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Itim', cursive;
+}
+
+/* ปรับสไตล์สำหรับ input ที่เป็นข้อความให้ใหญ่ขึ้น */
+#checkForm input[type="text"] {
+  width: 100%;
+  padding: 12px;               /* เพิ่ม padding ให้ใหญ่ขึ้น */
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  font-size: 1.3em;            /* ขยายขนาดฟอนต์ใน input */
+  outline: none;
+  font-family: 'Itim', cursive;
+}
+
+/* ปรับสไตล์สำหรับปุ่ม submit ให้โดดเด่นและใหญ่ขึ้น */
+#checkForm input[type="submit"] {
+  background-color: #ffb6c1;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 28px;          /* เพิ่ม padding ให้ปุ่มใหญ่ขึ้น */
+  font-size: 1.3em;            /* ขยายฟอนต์ปุ่ม */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Itim', cursive;
+}
+
+#checkForm input[type="submit"]:hover {
+  background-color: #ff8da1;
+  font-family: 'Itim', cursive;
+}
+
   /* ----------------- สไตล์สำหรับ Modal ----------------- */
   
   /* พื้นหลังของ Modal ซ่อนไว้เริ่มต้น */
@@ -72,6 +82,7 @@ html, body {
     align-items: center;
     /* เพิ่ม animation แบบ fade-in */
     animation: fadeIn 0.4s;
+    font-family: 'Itim', cursive;
   }
   
   @keyframes fadeIn {
